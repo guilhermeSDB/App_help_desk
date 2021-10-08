@@ -85,5 +85,22 @@ require_once "validador_acesso.php";
           </div>
         </div>
     </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script>
+      <?php 
+
+      if(isset($_GET["salvo"])) {
+        echo "Swal.fire({
+              title: 'Sucesso',
+              text: 'Salvo com sucesso!',
+              icon: 'success',
+              confirmButtonText: 'Ok'
+              })";
+      }
+
+      ?>
+    </script>
   </body>
 </html>
