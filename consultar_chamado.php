@@ -4,24 +4,27 @@ require_once "validador_acesso.php";
 
 $chamados = array();
 
-//abrir o arquivo para leitura 
-$arquivo = fopen('arquivo.txt', 'r');
+try {
 
-//Enquanto houver registro (linhas) a serem recuperados
-while (!feof($arquivo)) { //testa pelo fim do arquivo
-  //linhas
-  $registro = fgets($arquivo);
-  $chamados[] = $registro;
-}
+  //abrir o arquivo para leitura 
+  $arquivo = fopen('arquivo.txt', 'r');
+
+  //Enquanto houver registro (linhas) a serem recuperados
+  while (!feof($arquivo)) { //testa pelo fim do arquivo
+    //linhas
+    $registro = fgets($arquivo);
+    $chamados[] = $registro;
+  }
 
 //fechar o arquivo aberto
 fclose($arquivo);
 
 
-function recuperarChamado($chamados)
-{
+}catch(Exception $e){
+  echo $e;  
+}finally{
+  echo "Nada para mostrar";
 }
-
 
 
 
