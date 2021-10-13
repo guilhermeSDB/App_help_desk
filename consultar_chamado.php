@@ -87,7 +87,6 @@ fclose($arquivo);
                 continue;
               }
 
-
             ?>
 
               <div class="card mb-3 bg-light">
@@ -100,8 +99,6 @@ fclose($arquivo);
               </div>
 
             <?php } ?>
-
-
 
             <div class="row mt-5">
               <div class="col-6">
