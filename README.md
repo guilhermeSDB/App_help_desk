@@ -26,3 +26,11 @@ Clicando no primeiro Icone, é levado para Abrir_chamado.php, todos os campos sa
 Abrir_chamado_exec.php recebe o POST e SESSION ID do usuario, e é salvo dentro de um arquivo.txt no computador do utilizador, na mesma pasta dos arquivos utilizando [fOpen](https://www.php.net/manual/pt_BR/function.fopen.php).<br>   
 --Consultar chamados:
 Clicando no segundo Icone é levado para consulta de chamados aberto, que é que um Foreach que verifica os arquivos salvos.
+
+## Demonstração
+<p align="center">
+  <img src="https://i.imgur.com/kp9LHFw.png" width"250" alt="Login Help Desk" title="Help Desk">
+  <img src="https://i.imgur.com/YlE4f7C.png" width"250" alt="Index Help Desk" title="Help Desk">
+  <img src="https://i.imgur.com/YuSwL3f.png" width"250" alt="Abrir Chamado Help Desk" title="Help Desk">
+	<img src="https://i.imgur.com/z76SC7E.png" width"250" alt="Visualizar Chamado Help Desk" title="Help Desk">
+</p>
